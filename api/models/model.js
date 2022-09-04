@@ -9,7 +9,7 @@
    Then, adapt the initialization of the data at the end of this file (Task 2 - Part 2)
    so that you have some instances of your object available that can be served to the client.
  */
-class Person {
+class Resource {
     constructor(name, age, greeneyes, birthday) {
         this.name = name;               //String property
         this.age = age;                 //Number property
@@ -75,9 +75,9 @@ const model = new Model();
 
 /* Task 1 - Part 2. Replace these three instances of the example Class Resource with instances
    of your own class */
-model.add(new Person("Tim", 25, true, new Date(1986, 10, 8)));
-model.add(new Person("Lisa", 22, false, new Date(1987, 9,10)));
-model.add(new Person("Max", 23, true, new Date( 1985,7,14)));
-model.add(new Person("Maria", 21, false, new Date(1990,8,5)));
+model.add(new Resource("Tim", 25, true, new Date(1986, 10, 8)));
+model.add(new Resource("Lisa", 22, false, new Date(1987, 9,10)));
+model.add(new Resource("Max", 23, true, new Date( 1985,7,14)));
+model.add(new Resource("Maria", 21, false, new Date(1990,8,5)));
 
 module.exports = model;
